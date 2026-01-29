@@ -22,28 +22,28 @@
 </form>
 
 <table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Rating)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Movies)
+<thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies!.First().Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies!.First().ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies!.First().Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies!.First().Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movies!.First().Rating)
+        </th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var item in Model.Movies ?? [])
         {
             <tr>
                 <td>
