@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.35721.306
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{9EB97CB9-D321-04C1-136F-224636A3D34D}"
 EndProject
@@ -14,6 +14,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorMovie", "RazorMovie\RazorMovie.csproj", "{69C33CED-8028-480E-BF79-550F4EE76D4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorMovie.Tests", "RazorMovie.Tests\RazorMovie.Tests.csproj", "{5F522062-1C4A-4CCC-8165-4CFD56CF6A4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{079DEBD7-7A54-4053-96F0-507344932435}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "upgrades", "upgrades", "{DF4769AF-178E-4848-996A-2787A0B538AA}"
+	ProjectSection(SolutionItems) = preProject
+		MvcMovie\upgrades\assessment.csv = MvcMovie\upgrades\assessment.csv
+		MvcMovie\upgrades\assessment.json = MvcMovie\upgrades\assessment.json
+		MvcMovie\upgrades\assessment.md = MvcMovie\upgrades\assessment.md
+		MvcMovie\upgrades\execution-log.md = MvcMovie\upgrades\execution-log.md
+		MvcMovie\upgrades\plan.md = MvcMovie\upgrades\plan.md
+		MvcMovie\upgrades\tasks.md = MvcMovie\upgrades\tasks.md
+		MvcMovie\upgrades\upgrade-summary.md = MvcMovie\upgrades\upgrade-summary.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +61,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF4769AF-178E-4848-996A-2787A0B538AA} = {079DEBD7-7A54-4053-96F0-507344932435}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6137EB1-6DE2-4E34-ABB0-21CDEC780745}
