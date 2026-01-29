@@ -16,9 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorMovie.Tests", "RazorMovie.Tests\RazorMovie.Tests.csproj", "{5F522062-1C4A-4CCC-8165-4CFD56CF6A4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{169E9CDF-7BCD-4FB8-8B6A-19B589CB4634}"
-	ProjectSection(SolutionItems) = preProject
-		copilot-instructions.md = copilot-instructions.md
-	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "upgrades", "upgrades", "{E0F462F4-2566-4D15-B32B-6C20DCD18507}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +52,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0F462F4-2566-4D15-B32B-6C20DCD18507} = {169E9CDF-7BCD-4FB8-8B6A-19B589CB4634}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6137EB1-6DE2-4E34-ABB0-21CDEC780745}
