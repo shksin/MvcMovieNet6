@@ -41,8 +41,9 @@ namespace WpfMovie.Tests
         [Test]
         public void Deserialize_ShouldCreateMovie()
         {
-            // Arrange
-            var movieString = "AAEAAAD/////AQAAAAAAAAAMAgAAAD9XcGZNb3ZpZSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAABVXcGZNb3ZpZS5Nb2RlbHMuTW92aWUCAAAABXRpdGxlC2Rlc2NyaXB0aW9uAQECAAAABgMAAAAKVGVzdCBUaXRsZQYEAAAAEFRlc3QgRGVzY3JpcHRpb24L";
+            // Arrange - Use base64-encoded JSON format (compatible with System.Text.Json)
+            var json = "{\"Title\":\"Test Title\",\"Description\":\"Test Description\"}";
+            var movieString = Convert.ToBase64String(Encoding.UTF8.GetBytes(json));
             
             // Act
             var newMovie = stateManager.Deserialize(movieString);
