@@ -1,0 +1,1787 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-01-29T01:27:11.6954363Z",
+  "analysisEndTime": "2026-01-29T01:27:18.0443141Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 6,
+      "issues": 9,
+      "incidents": 66,
+      "effort": 66
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 50,
+        "Optional": 2,
+        "Potential": 14,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 7,
+        "Project": 6,
+        "Api": 53
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "MvcMovie\\MvcMovie.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 7,
+      "properties": {
+        "appName": "MvcMovie",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 35,
+        "numberOfCodeFiles": 28,
+        "linesTotal": 1179,
+        "linesOfCode": 1068,
+        "totalApiScanned": 5128,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "f0aa16d2-5946-415e-8bb9-ce83b48392ca",
+          "ruleId": "NuGet.0002",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Design, 6.0.0-rtm.21467.1\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore.Design, 6.0.0-rtm.21467.1\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.2"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Design, 6.0.0-rtm.21467.1\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Design, 6.0.0-rtm.21467.1\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Design, and replace with new package Microsoft.EntityFrameworkCore.Design 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore.Design 6.0.0-rtm.21467.1",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Design",
+              "PackageVersion": "6.0.0-rtm.21467.1",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "1f05b00b-773b-4765-977a-10a9f09eacff",
+          "ruleId": "NuGet.0002",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 6.0.0-rc.1.21452.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "6.0.0-rc.1.21452.10",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "4d95e689-35f2-4403-ab81-21792c84cd02",
+          "ruleId": "NuGet.0002",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.Tools, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+              "protected": "Microsoft.EntityFrameworkCore.Tools, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.Tools, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.Tools, 6.0.0-rc.1.21452.10\n\nRecommendation:\n\nRemove Microsoft.EntityFrameworkCore.Tools, and replace with new package Microsoft.EntityFrameworkCore.Tools 10.0.2",
+            "label": "Microsoft.EntityFrameworkCore.Tools 6.0.0-rc.1.21452.10",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.Tools",
+              "PackageVersion": "6.0.0-rc.1.21452.10",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b17fdba9-abec-400f-a716-74f7d98f0c83",
+          "ruleId": "NuGet.0002",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 6.0.0-rc.1.21464.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+              "protected": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 6.0.0-rc.1.21464.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 6.0.0-rc.1.21464.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "protectedSnippet": "Microsoft.VisualStudio.Web.CodeGeneration.Design, 6.0.0-rc.1.21464.1\n\nRecommendation:\n\nRemove Microsoft.VisualStudio.Web.CodeGeneration.Design, and replace with new package Microsoft.VisualStudio.Web.CodeGeneration.Design 10.0.2",
+            "label": "Microsoft.VisualStudio.Web.CodeGeneration.Design 6.0.0-rc.1.21464.1",
+            "properties": {
+              "PackageId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+              "PackageVersion": "6.0.0-rc.1.21464.1",
+              "PackageNewVersion": "10.0.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "fa38bce9-53a2-406e-a81b-7aa9ced2322d",
+          "ruleId": "NuGet.0005",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Data.SqlClient, 4.0.5\n\nRecommendation:\n\nThis version is out of support.\nRemove Microsoft.Data.SqlClient, and replace with new package Microsoft.Data.SqlClient, 6.1.4",
+              "protected": "Microsoft.Data.SqlClient, 4.0.5\n\nRecommendation:\n\nThis version is out of support.\nRemove Microsoft.Data.SqlClient, and replace with new package Microsoft.Data.SqlClient, 6.1.4"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Microsoft.Data.SqlClient, 4.0.5\n\nRecommendation:\n\nThis version is out of support.\nRemove Microsoft.Data.SqlClient, and replace with new package Microsoft.Data.SqlClient, 6.1.4",
+            "protectedSnippet": "Microsoft.Data.SqlClient, 4.0.5\n\nRecommendation:\n\nThis version is out of support.\nRemove Microsoft.Data.SqlClient, and replace with new package Microsoft.Data.SqlClient, 6.1.4",
+            "label": "Microsoft.Data.SqlClient 4.0.5",
+            "properties": {
+              "PackageId": "Microsoft.Data.SqlClient",
+              "PackageVersion": "4.0.5",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "888bf41b-5e1f-411c-a82e-8d9490ee5839",
+          "ruleId": "Project.0002",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\MvcMovie.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "010dee51-03bc-47c7-b220-90423a85b597",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "MvcMovie\\MvcMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Home/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "MvcMovie\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Home/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 25,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "MvcMovie.Tests\\MvcMovie.Tests.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "MvcMovie.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 5,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 1929,
+        "linesOfCode": 26,
+        "totalApiScanned": 11,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "6e23471e-11ca-4171-a5cd-1e9fe8248d76",
+          "ruleId": "Project.0002",
+          "projectPath": "MvcMovie.Tests\\MvcMovie.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "MvcMovie.Tests\\MvcMovie.Tests.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "RazorMovie\\RazorMovie.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 3,
+      "properties": {
+        "appName": "RazorMovie",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 18,
+        "numberOfCodeFiles": 13,
+        "linesTotal": 418,
+        "linesOfCode": 377,
+        "totalApiScanned": 1342,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "266bc1e0-edcc-4709-a3b4-73f7d9d79c0c",
+          "ruleId": "NuGet.0004",
+          "projectPath": "RazorMovie\\RazorMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HtmlSanitizer, 7.1.542\n\nRecommendation:\n\nHtmlSanitizer, 9.0.889",
+              "protected": "HtmlSanitizer, 7.1.542\n\nRecommendation:\n\nHtmlSanitizer, 9.0.889"
+            },
+            "kind": "File",
+            "path": "RazorMovie\\RazorMovie.csproj",
+            "snippet": "HtmlSanitizer, 7.1.542\n\nRecommendation:\n\nHtmlSanitizer, 9.0.889",
+            "protectedSnippet": "HtmlSanitizer, 7.1.542\n\nRecommendation:\n\nHtmlSanitizer, 9.0.889",
+            "label": "HtmlSanitizer 7.1.542",
+            "properties": {
+              "PackageId": "HtmlSanitizer",
+              "PackageVersion": "7.1.542",
+              "PackageNewVersion": "9.0.889",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "cf9422dc-b35a-4ac9-9530-54ca7fcbdd26",
+          "ruleId": "Project.0002",
+          "projectPath": "RazorMovie\\RazorMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "RazorMovie\\RazorMovie.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "db19b572-0e1f-4a06-b957-5079883a7879",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true ",
+          "projectPath": "RazorMovie\\RazorMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.UseExceptionHandler(\u0022/Error\u0022);",
+              "protected": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)"
+            },
+            "kind": "File",
+            "path": "RazorMovie\\Program.cs",
+            "snippet": "app.UseExceptionHandler(\u0022/Error\u0022);",
+            "protectedSnippet": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "label": "M:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/aspnet-core/10/exception-handler-diagnostics-suppressed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 43,
+            "column": 4
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "RazorMovie.Tests\\RazorMovie.Tests.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "RazorMovie.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 4,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 1813,
+        "linesOfCode": 30,
+        "totalApiScanned": 35,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b4760366-9b47-48bd-a160-0b32362acecb",
+          "ruleId": "Project.0002",
+          "projectPath": "RazorMovie.Tests\\RazorMovie.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "RazorMovie.Tests\\RazorMovie.Tests.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "WpfMovie\\WpfMovie.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 53,
+      "properties": {
+        "appName": "WpfMovie",
+        "projectKind": "Wpf",
+        "frameworks": [
+          "net6.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 7,
+        "linesTotal": 271,
+        "linesOfCode": 271,
+        "totalApiScanned": 255,
+        "minLinesOfCodeToChange": 51,
+        "maxLinesOfCodeToChange": 51
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b430319a-a5e9-43ec-af98-9ffa3c0e95fb",
+          "ruleId": "NuGet.0002",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\WpfMovie.csproj",
+            "snippet": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 13.0.3\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 13.0.3",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "13.0.3",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3e0dc8b2-a03d-4927-923b-5e850443ac16",
+          "ruleId": "Project.0002",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0-windows\nRecommended target framework: net10.0-windows",
+              "protected": "Current target framework: net6.0-windows\nRecommended target framework: net10.0-windows"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\WpfMovie.csproj",
+            "snippet": "Current target framework: net6.0-windows\nRecommended target framework: net10.0-windows",
+            "protectedSnippet": "Current target framework: net6.0-windows\nRecommended target framework: net10.0-windows",
+            "properties": {
+              "CurrentTargetFramework": "net6.0-windows",
+              "RecommendedTargetFramework": "net10.0-windows"
+            }
+          }
+        },
+        {
+          "incidentId": "abb90e9c-a42a-4b4b-988f-0f2fca73ac66",
+          "ruleId": "Api.0002",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information. ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var formatter = new BinaryFormatter();",
+              "protected": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\Services\\MovieStateManager.cs",
+            "snippet": "var formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": false
+              }
+            ],
+            "line": 38,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "18753de2-8bef-4cd4-866a-cee5873965b3",
+          "ruleId": "Api.0002",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information. ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var formatter = new BinaryFormatter();",
+              "protected": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\Services\\MovieStateManager.cs",
+            "snippet": "var formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": false
+              }
+            ],
+            "line": 20,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7cd61191-3130-4d05-b647-c824876b6b78",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "app.Run();",
+              "protected": "M:System.Windows.Application.Run"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+            "snippet": "app.Run();",
+            "protectedSnippet": "M:System.Windows.Application.Run",
+            "label": "M:System.Windows.Application.Run",
+            "line": 66,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1b8e62d2-6d7e-436b-923b-b115d1eca1aa",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6ddb1345-7ef0-4ffb-b122-5faea59ea1b7",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1fe28da8-64ef-4329-a458-1128e077dbf7",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "538524c4-da64-4658-b5ea-333dc089e90a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "P:System.Windows.Application.StartupUri"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\App.g.i.cs",
+            "snippet": "this.StartupUri = new System.Uri(\u0022MainWindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "P:System.Windows.Application.StartupUri",
+            "label": "P:System.Windows.Application.StartupUri",
+            "line": 51,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f6af0f42-a114-4b35-a0fe-052d2cfed197",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "M:System.Windows.Application.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "M:System.Windows.Application.#ctor",
+            "label": "M:System.Windows.Application.#ctor",
+            "line": 9,
+            "column": 27
+          }
+        },
+        {
+          "incidentId": "f85e8b72-7f37-4b79-85fb-a6d70df0e4c5",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Application",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\App.xaml.cs",
+            "snippet": "Application",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "line": 9,
+            "column": 27
+          }
+        },
+        {
+          "incidentId": "d29db2ba-138a-41f5-8815-1e4665a2fe57",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.MovieListBox = ((System.Windows.Controls.ListBox)(target));",
+              "protected": "T:System.Windows.Controls.ListBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.MovieListBox = ((System.Windows.Controls.ListBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.ListBox",
+            "label": "T:System.Windows.Controls.ListBox",
+            "line": 112,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "005aa20f-ea40-4093-974a-92812c5cea26",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+              "protected": "T:System.Windows.RoutedEventHandler"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+            "protectedSnippet": "T:System.Windows.RoutedEventHandler",
+            "label": "T:System.Windows.RoutedEventHandler",
+            "line": 106,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6b4ed996-2e8b-4524-a75e-4f8ba1c843bb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+              "protected": "T:System.Windows.RoutedEventHandler"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+            "protectedSnippet": "T:System.Windows.RoutedEventHandler",
+            "label": "T:System.Windows.RoutedEventHandler",
+            "line": 106,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "14034f6e-9ae7-4e9b-b5f8-b4371ddaf660",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+              "protected": "E:System.Windows.Controls.Primitives.ButtonBase.Click"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "((System.Windows.Controls.Button)(target)).Click \u002B= new System.Windows.RoutedEventHandler(this.AddButton_Click);",
+            "protectedSnippet": "E:System.Windows.Controls.Primitives.ButtonBase.Click",
+            "label": "E:System.Windows.Controls.Primitives.ButtonBase.Click",
+            "line": 106,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b89fe343-f627-4a1d-92f9-6d27ce71f497",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.DescriptionTextBox = ((System.Windows.Controls.TextBox)(target));",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.DescriptionTextBox = ((System.Windows.Controls.TextBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 101,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "72ed1464-a7b4-4889-8094-28021c3c545f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "this.TitleTextBox = ((System.Windows.Controls.TextBox)(target));",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "this.TitleTextBox = ((System.Windows.Controls.TextBox)(target));",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 98,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "61587e88-4833-4610-8b66-9cf98b6197a4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "T:System.Windows.Application"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "T:System.Windows.Application",
+            "label": "T:System.Windows.Application",
+            "line": 82,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "881847d2-1175-4774-97e6-8cd094801b55",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+              "protected": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Windows.Application.LoadComponent(this, resourceLocater);",
+            "protectedSnippet": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "label": "M:System.Windows.Application.LoadComponent(System.Object,System.Uri)",
+            "line": 82,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "aa36a7e0-3677-429a-bb68-850acc577304",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfMovie;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "T:System.Uri"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfMovie;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "T:System.Uri",
+            "label": "T:System.Uri",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 79,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e2f30326-21eb-4067-8096-6bd3e91aa1e1",
+          "ruleId": "Api.0003",
+          "description": "Breaking change: URI length limits removed ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Uri resourceLocater = new System.Uri(\u0022/WpfMovie;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+              "protected": "M:System.Uri.#ctor(System.String,System.UriKind)"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "System.Uri resourceLocater = new System.Uri(\u0022/WpfMovie;component/mainwindow.xaml\u0022, System.UriKind.Relative);",
+            "protectedSnippet": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "label": "M:System.Uri.#ctor(System.String,System.UriKind)",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/networking/10.0/uri-length-limits-removed.md",
+                "isCustom": false
+              }
+            ],
+            "line": 79,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "979ff624-0d63-4083-8295-e9a9a85067f2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "MovieListBox",
+              "protected": "T:System.Windows.Controls.ListBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "MovieListBox",
+            "protectedSnippet": "T:System.Windows.Controls.ListBox",
+            "label": "T:System.Windows.Controls.ListBox",
+            "line": 62,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "718e0a43-fdfd-45a5-b9ab-92a720b72313",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DescriptionTextBox",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "DescriptionTextBox",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 54,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "500bb132-98f4-4bef-b7f5-b36eed64a8dd",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TitleTextBox",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "TitleTextBox",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 46,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "ad7437ad-a474-4e01-a569-de3b23d52048",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "private void DeleteButton_Click(object sender, RoutedEventArgs e)",
+              "protected": "T:System.Windows.RoutedEventArgs"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "private void DeleteButton_Click(object sender, RoutedEventArgs e)",
+            "protectedSnippet": "T:System.Windows.RoutedEventArgs",
+            "label": "T:System.Windows.RoutedEventArgs",
+            "line": 46,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "e6e1fae0-7e65-40f0-b20a-6dc659e2c462",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.DeleteTodoItem(selectedItem);\r\n        }",
+              "protected": "T:System.Windows.Controls.ListBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.DeleteTodoItem(selectedItem);\r\n        }",
+            "protectedSnippet": "T:System.Windows.Controls.ListBox",
+            "label": "T:System.Windows.Controls.ListBox",
+            "line": 48,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "5c1b9475-62fd-4eb6-9310-5b0ce4748680",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.DeleteTodoItem(selectedItem);\r\n        }",
+              "protected": "P:System.Windows.Controls.Primitives.Selector.SelectedItem"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.DeleteTodoItem(selectedItem);\r\n        }",
+            "protectedSnippet": "P:System.Windows.Controls.Primitives.Selector.SelectedItem",
+            "label": "P:System.Windows.Controls.Primitives.Selector.SelectedItem",
+            "line": 48,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "fdd4342c-a976-44c2-8dfe-5651427c45a1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "private void EditButton_Click(object sender, RoutedEventArgs e)",
+              "protected": "T:System.Windows.RoutedEventArgs"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "private void EditButton_Click(object sender, RoutedEventArgs e)",
+            "protectedSnippet": "T:System.Windows.RoutedEventArgs",
+            "label": "T:System.Windows.RoutedEventArgs",
+            "line": 36,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "887265bf-ca3e-4fff-8c18-cf85ee657617",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DescriptionTextBox.Clear();",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DescriptionTextBox.Clear();",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "77bb5b57-cd08-4e91-850c-a4467bf3c216",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DescriptionTextBox.Clear();",
+              "protected": "M:System.Windows.Controls.TextBox.Clear"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DescriptionTextBox.Clear();",
+            "protectedSnippet": "M:System.Windows.Controls.TextBox.Clear",
+            "label": "M:System.Windows.Controls.TextBox.Clear",
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "7d86e97b-7cb3-46ae-a687-73810066b2c0",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TitleTextBox.Clear();",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "TitleTextBox.Clear();",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 41,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "92767252-0c9e-4294-aefd-0dc8c3d1ca3d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TitleTextBox.Clear();",
+              "protected": "M:System.Windows.Controls.TextBox.Clear"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "TitleTextBox.Clear();",
+            "protectedSnippet": "M:System.Windows.Controls.TextBox.Clear",
+            "label": "M:System.Windows.Controls.TextBox.Clear",
+            "line": 41,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "93c82919-623c-4a9c-8b02-fcaa172bc96e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d5a99a68-9a41-42ce-9529-5cc2c858f714",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "P:System.Windows.Controls.TextBox.Text"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "P:System.Windows.Controls.TextBox.Text",
+            "label": "P:System.Windows.Controls.TextBox.Text",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "83324e38-7f56-4c9c-b442-c4604216c7a2",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "613d3782-b726-44c0-aa1b-355bc0095a84",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "P:System.Windows.Controls.TextBox.Text"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "P:System.Windows.Controls.TextBox.Text",
+            "label": "P:System.Windows.Controls.TextBox.Text",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "53891b19-bd80-41a3-a94b-6459bb84d9f3",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);\r\n            TitleTextBox.Clear();\r\n            DescriptionTextBox.Clear();\r\n        }",
+              "protected": "T:System.Windows.Controls.ListBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);\r\n            TitleTextBox.Clear();\r\n            DescriptionTextBox.Clear();\r\n        }",
+            "protectedSnippet": "T:System.Windows.Controls.ListBox",
+            "label": "T:System.Windows.Controls.ListBox",
+            "line": 38,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "189db5bc-ec10-4e85-b865-9394f9324e36",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);\r\n            TitleTextBox.Clear();\r\n            DescriptionTextBox.Clear();\r\n        }",
+              "protected": "P:System.Windows.Controls.Primitives.Selector.SelectedItem"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "if (MovieListBox.SelectedItem is Movie selectedItem)\r\n        {\r\n            viewModel.EditTodoItem(selectedItem, TitleTextBox.Text, DescriptionTextBox.Text);\r\n            TitleTextBox.Clear();\r\n            DescriptionTextBox.Clear();\r\n        }",
+            "protectedSnippet": "P:System.Windows.Controls.Primitives.Selector.SelectedItem",
+            "label": "P:System.Windows.Controls.Primitives.Selector.SelectedItem",
+            "line": 38,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "5a952977-9ce0-443b-9ed7-e74d68d12c2c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "private void AddButton_Click(object sender, RoutedEventArgs e)",
+              "protected": "T:System.Windows.RoutedEventArgs"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "private void AddButton_Click(object sender, RoutedEventArgs e)",
+            "protectedSnippet": "T:System.Windows.RoutedEventArgs",
+            "label": "T:System.Windows.RoutedEventArgs",
+            "line": 29,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "61027b6f-083f-4074-a775-04ae94c71116",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DescriptionTextBox.Clear();",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DescriptionTextBox.Clear();",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 33,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "8ccfe0b8-6d04-4385-9135-51d669043770",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DescriptionTextBox.Clear();",
+              "protected": "M:System.Windows.Controls.TextBox.Clear"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DescriptionTextBox.Clear();",
+            "protectedSnippet": "M:System.Windows.Controls.TextBox.Clear",
+            "label": "M:System.Windows.Controls.TextBox.Clear",
+            "line": 33,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "80930519-bf10-422c-97c4-14e136e6e747",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TitleTextBox.Clear();",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "TitleTextBox.Clear();",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 32,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "4512a604-e0a0-4cfc-91f1-3d6b4be53e08",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TitleTextBox.Clear();",
+              "protected": "M:System.Windows.Controls.TextBox.Clear"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "TitleTextBox.Clear();",
+            "protectedSnippet": "M:System.Windows.Controls.TextBox.Clear",
+            "label": "M:System.Windows.Controls.TextBox.Clear",
+            "line": 32,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "fb5ffe18-2408-49bc-8b2d-74515505d661",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "94fc401c-7515-4124-9a1b-4dafe8488b3b",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "P:System.Windows.Controls.TextBox.Text"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "P:System.Windows.Controls.TextBox.Text",
+            "label": "P:System.Windows.Controls.TextBox.Text",
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "3f610bcc-ab64-4b0e-9dae-4b811539d16c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "T:System.Windows.Controls.TextBox"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "T:System.Windows.Controls.TextBox",
+            "label": "T:System.Windows.Controls.TextBox",
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6429b89f-1009-454b-9468-4dcf6e29d794",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+              "protected": "P:System.Windows.Controls.TextBox.Text"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "viewModel.AddTodoItem(TitleTextBox.Text, DescriptionTextBox.Text);",
+            "protectedSnippet": "P:System.Windows.Controls.TextBox.Text",
+            "label": "P:System.Windows.Controls.TextBox.Text",
+            "line": 31,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "9b4d689c-d6f8-4d11-a978-751be684a96e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DataContext = viewModel;",
+              "protected": "P:System.Windows.FrameworkElement.DataContext"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DataContext = viewModel;",
+            "protectedSnippet": "P:System.Windows.FrameworkElement.DataContext",
+            "label": "P:System.Windows.FrameworkElement.DataContext",
+            "line": 26,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "caa45ef2-6668-480d-aa0d-1c0adf39eebc",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n    {\r\n        InitializeComponent();\r\n        viewModel = new MainViewModel();\r\n        DataContext = viewModel;\r\n    }",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n    {\r\n        InitializeComponent();\r\n        viewModel = new MainViewModel();\r\n        DataContext = viewModel;\r\n    }",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "line": 22,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "838ff8da-e024-4c83-bbc2-b8fff729e2ea",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "DataContext = viewModel;",
+              "protected": "P:System.Windows.FrameworkElement.DataContext"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "DataContext = viewModel;",
+            "protectedSnippet": "P:System.Windows.FrameworkElement.DataContext",
+            "label": "P:System.Windows.FrameworkElement.DataContext",
+            "line": 26,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "ef277e9e-9805-49d2-b0e1-eb5ccd6796f1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public MainWindow()\r\n    {\r\n        InitializeComponent();\r\n        viewModel = new MainViewModel();\r\n        DataContext = viewModel;\r\n    }",
+              "protected": "M:System.Windows.Window.#ctor"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "public MainWindow()\r\n    {\r\n        InitializeComponent();\r\n        viewModel = new MainViewModel();\r\n        DataContext = viewModel;\r\n    }",
+            "protectedSnippet": "M:System.Windows.Window.#ctor",
+            "label": "M:System.Windows.Window.#ctor",
+            "line": 22,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "365f4672-a8da-4a6c-84cb-6101b0c976cf",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "IComponentConnector",
+              "protected": "T:System.Windows.Markup.IComponentConnector"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\obj\\Debug\\net6.0-windows\\MainWindow.g.i.cs",
+            "snippet": "IComponentConnector",
+            "protectedSnippet": "T:System.Windows.Markup.IComponentConnector",
+            "label": "T:System.Windows.Markup.IComponentConnector",
+            "line": 41,
+            "column": 83
+          }
+        },
+        {
+          "incidentId": "0cbd5644-8a94-46f7-8b36-438c1e976b1f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "WpfMovie\\WpfMovie.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Window",
+              "protected": "T:System.Windows.Window"
+            },
+            "kind": "File",
+            "path": "WpfMovie\\MainWindow.xaml.cs",
+            "snippet": "Window",
+            "protectedSnippet": "T:System.Windows.Window",
+            "label": "T:System.Windows.Window",
+            "line": 18,
+            "column": 34
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "Remoting",
+          "incidents": [
+            "18753de2-8bef-4cd4-866a-cee5873965b3",
+            "abb90e9c-a42a-4b4b-988f-0f2fca73ac66"
+          ]
+        },
+        {
+          "featureId": "Wpf",
+          "incidents": [
+            "365f4672-a8da-4a6c-84cb-6101b0c976cf",
+            "6429b89f-1009-454b-9468-4dcf6e29d794",
+            "3f610bcc-ab64-4b0e-9dae-4b811539d16c",
+            "94fc401c-7515-4124-9a1b-4dafe8488b3b",
+            "fb5ffe18-2408-49bc-8b2d-74515505d661",
+            "4512a604-e0a0-4cfc-91f1-3d6b4be53e08",
+            "80930519-bf10-422c-97c4-14e136e6e747",
+            "8ccfe0b8-6d04-4385-9135-51d669043770",
+            "61027b6f-083f-4074-a775-04ae94c71116",
+            "189db5bc-ec10-4e85-b865-9394f9324e36",
+            "53891b19-bd80-41a3-a94b-6459bb84d9f3",
+            "613d3782-b726-44c0-aa1b-355bc0095a84",
+            "83324e38-7f56-4c9c-b442-c4604216c7a2",
+            "d5a99a68-9a41-42ce-9529-5cc2c858f714",
+            "93c82919-623c-4a9c-8b02-fcaa172bc96e",
+            "92767252-0c9e-4294-aefd-0dc8c3d1ca3d",
+            "7d86e97b-7cb3-46ae-a687-73810066b2c0",
+            "77bb5b57-cd08-4e91-850c-a4467bf3c216",
+            "887265bf-ca3e-4fff-8c18-cf85ee657617",
+            "5c1b9475-62fd-4eb6-9310-5b0ce4748680",
+            "e6e1fae0-7e65-40f0-b20a-6dc659e2c462",
+            "500bb132-98f4-4bef-b7f5-b36eed64a8dd",
+            "718e0a43-fdfd-45a5-b9ab-92a720b72313",
+            "979ff624-0d63-4083-8295-e9a9a85067f2",
+            "72ed1464-a7b4-4889-8094-28021c3c545f",
+            "b89fe343-f627-4a1d-92f9-6d27ce71f497",
+            "14034f6e-9ae7-4e9b-b5f8-b4371ddaf660",
+            "d29db2ba-138a-41f5-8815-1e4665a2fe57"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "WpfMovie.Tests\\WpfMovie.Tests.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "WpfMovie.Tests",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net6.0-windows"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 6,
+        "numberOfCodeFiles": 3,
+        "linesTotal": 2045,
+        "linesOfCode": 142,
+        "totalApiScanned": 106,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "23f35986-9894-4441-b7ec-071688177935",
+          "ruleId": "Project.0002",
+          "projectPath": "WpfMovie.Tests\\WpfMovie.Tests.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0-windows\nRecommended target framework: net10.0--windows",
+              "protected": "Current target framework: net6.0-windows\nRecommended target framework: net10.0--windows"
+            },
+            "kind": "File",
+            "path": "WpfMovie.Tests\\WpfMovie.Tests.csproj",
+            "snippet": "Current target framework: net6.0-windows\nRecommended target framework: net10.0--windows",
+            "protectedSnippet": "Current target framework: net6.0-windows\nRecommended target framework: net10.0--windows",
+            "properties": {
+              "CurrentTargetFramework": "net6.0-windows",
+              "RecommendedTargetFramework": "net10.0--windows"
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "isFeature": false,
+      "description": "API has a behavioral change in selected .NET version: code and binaries may behave differently at runtime without needing recompilation, but the new behavior might be undesirable and require updates.",
+      "label": "Behavioral change in selected .NET version",
+      "severity": "Potential",
+      "effort": 1
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Remoting": {
+      "id": "Remoting",
+      "isFeature": false,
+      "description": "Legacy .NET Remoting, BinaryFormatter, and related serialization APIs that are deprecated and removed for security reasons. Remoting provided distributed object communication but had significant security vulnerabilities. Migrate to gRPC, HTTP APIs, or modern serialization (System.Text.Json, protobuf).",
+      "label": "Deprecated Remoting \u0026 Serialization",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "gRPC on .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341901",
+          "isCustom": false
+        }
+      ]
+    },
+    "Wpf": {
+      "id": "Wpf",
+      "isFeature": false,
+      "description": "WPF APIs for building Windows desktop applications with XAML-based UI that are available in .NET on Windows. WPF provides rich desktop UI capabilities with data binding and styling. Enable Windows Desktop support: Option 1 (Recommended): Target net9.0-windows; Option 2: Add \u003CUseWindowsDesktop\u003Etrue\u003C/UseWindowsDesktop\u003E.",
+      "label": "WPF (Windows Presentation Foundation)",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "WPF on .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2342008",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
