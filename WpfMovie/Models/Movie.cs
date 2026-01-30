@@ -9,8 +9,8 @@ namespace WpfMovie.Models
 {
     public class Movie : INotifyPropertyChanged
     {
-        private string title;
-        private string description;
+        private string title = string.Empty;
+        private string description = string.Empty;
 
         public string Title
         {

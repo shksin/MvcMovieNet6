@@ -27,10 +27,27 @@ namespace WpfMovie.Services
         /// </summary>
         /// <param name="movieString"></param>
         /// <returns></returns>
+        /// <exception cref="ArgumentException">Thrown when movieString is invalid</exception>
         public Movie Deserialize(string movieString)
         {
-            var json = Encoding.UTF8.GetString(Convert.FromBase64String(movieString));
-            return JsonSerializer.Deserialize<Movie>(json) ?? throw new InvalidOperationException("Failed to deserialize movie");
+            if (string.IsNullOrEmpty(movieString))
+            {
+                throw new ArgumentException("Movie string cannot be null or empty", nameof(movieString));
+            }
+
+            try
+            {
+                var json = Encoding.UTF8.GetString(Convert.FromBase64String(movieString));
+                return JsonSerializer.Deserialize<Movie>(json) ?? throw new InvalidOperationException("Failed to deserialize movie");
+            }
+            catch (FormatException ex)
+            {
+                throw new ArgumentException("Invalid base64 string format", nameof(movieString), ex);
+            }
+            catch (JsonException ex)
+            {
+                throw new ArgumentException("Invalid JSON format in movie string", nameof(movieString), ex);
+            }
         }
     }
 }
