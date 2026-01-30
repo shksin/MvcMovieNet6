@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace WpfMovie.Models
 {
-    [Serializable]
     public class Movie : INotifyPropertyChanged
     {
         private string title;
@@ -39,8 +38,7 @@ namespace WpfMovie.Models
             }
         }
 
-        [field: NonSerialized]
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
