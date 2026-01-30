@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using WpfMovie.Models;
 
@@ -12,21 +12,14 @@ namespace WpfMovie.Services
     public class MovieStateManager
     {
         /// <summary>
-        /// Uses binaryFormatter to serialize the object, and return a string that is base64 encoded
+        /// Uses System.Text.Json to serialize the object, and return a string that is base64 encoded
         /// </summary>
         /// <param name="anyMovie"></param>
         /// <returns></returns>
         public string Serialize(Movie anyMovie)
         {
-            var formatter = new BinaryFormatter();
-            using (var stream = new System.IO.MemoryStream())
-            {
-#pragma warning disable SYSLIB0011 // Type or member is obsolete
-                formatter.Serialize(stream, anyMovie);
-#pragma warning restore SYSLIB0011 // Type or member is obsolete
-                return Convert.ToBase64String(stream.ToArray());
-            }
-
+            var json = JsonSerializer.Serialize(anyMovie);
+            return Convert.ToBase64String(Encoding.UTF8.GetBytes(json));
         }
 
         /// <summary>
@@ -34,15 +27,26 @@ namespace WpfMovie.Services
         /// </summary>
         /// <param name="movieString"></param>
         /// <returns></returns>
+        /// <exception cref="ArgumentException">Thrown when movieString is invalid</exception>
         public Movie Deserialize(string movieString)
         {
-            var formatter = new BinaryFormatter();
-            var bytes = Convert.FromBase64String(movieString);
-            using (var stream = new System.IO.MemoryStream(bytes))
+            if (string.IsNullOrEmpty(movieString))
             {
-#pragma warning disable SYSLIB0011 // Type or member is obsolete
-                return (Movie)formatter.Deserialize(stream);
-#pragma warning restore SYSLIB0011 // Type or member is obsolete
+                throw new ArgumentException("Movie string cannot be null or empty", nameof(movieString));
+            }
+
+            try
+            {
+                var json = Encoding.UTF8.GetString(Convert.FromBase64String(movieString));
+                return JsonSerializer.Deserialize<Movie>(json) ?? throw new InvalidOperationException("Failed to deserialize movie");
+            }
+            catch (FormatException ex)
+            {
+                throw new ArgumentException("Invalid base64 string format", nameof(movieString), ex);
+            }
+            catch (JsonException ex)
+            {
+                throw new ArgumentException("Invalid JSON format in movie string", nameof(movieString), ex);
             }
         }
     }

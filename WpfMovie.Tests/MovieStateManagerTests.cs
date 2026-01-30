@@ -34,23 +34,23 @@ namespace WpfMovie.Tests
             var movieString = stateManager.Serialize(aMovie);
 
             // Assert
-            Assert.NotNull(movieString);
-            Assert.IsNotEmpty(movieString);
+            Assert.That(movieString, Is.Not.Null);
+            Assert.That(movieString, Is.Not.Empty);
         }
 
         [Test]
         public void Deserialize_ShouldCreateMovie()
         {
             // Arrange
-            var movieString = "AAEAAAD/////AQAAAAAAAAAMAgAAAD9XcGZNb3ZpZSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAABVXcGZNb3ZpZS5Nb2RlbHMuTW92aWUCAAAABXRpdGxlC2Rlc2NyaXB0aW9uAQECAAAABgMAAAAKVGVzdCBUaXRsZQYEAAAAEFRlc3QgRGVzY3JpcHRpb24L";
+            var movieString = "eyJUaXRsZSI6ICJUZXN0IFRpdGxlIiwgIkRlc2NyaXB0aW9uIjogIlRlc3QgRGVzY3JpcHRpb24ifQ==";
             
             // Act
             var newMovie = stateManager.Deserialize(movieString);
             
             // Assert
-            Assert.IsNotNull(newMovie);
-            Assert.AreEqual("Test Title", newMovie.Title);
-            Assert.AreEqual("Test Description", newMovie.Description);
+            Assert.That(newMovie, Is.Not.Null);
+            Assert.That(newMovie.Title, Is.EqualTo("Test Title"));
+            Assert.That(newMovie.Description, Is.EqualTo("Test Description"));
         }
 
         [Test]
@@ -70,9 +70,9 @@ namespace WpfMovie.Tests
             var newMovie = stateManager.Deserialize(movieString);
 
             // Assert
-            Assert.IsNotNull(newMovie);
-            Assert.AreEqual(aMovie.Title, newMovie.Title);
-            Assert.AreEqual(aMovie.Description, newMovie.Description);
+            Assert.That(newMovie, Is.Not.Null);
+            Assert.That(newMovie.Title, Is.EqualTo(aMovie.Title));
+            Assert.That(newMovie.Description, Is.EqualTo(aMovie.Description));
         }
     }
 }
